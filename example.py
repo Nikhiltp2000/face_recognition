@@ -2,7 +2,7 @@ import cv2
 
 trained_face = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 
-img = cv2.imread('photo1.jpg')
+img = cv2.imread('photo.jpg')//input the path of the photo
  
 
 grayscaled_img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
@@ -15,7 +15,7 @@ for (x, y, w, h) in face_coordinates:
 
 
 
-#print(face_coordinates)
+print(face_coordinates)
 
 
 
